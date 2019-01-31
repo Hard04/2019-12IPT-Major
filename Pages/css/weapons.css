@@ -1,0 +1,166 @@
+@charset "utf-8";
+* {box-sizing: border-box; }
+header > h1 {
+	text-align: center;
+}
+/*header{
+	background-image: url(../Images/customheader2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 128px;
+	width: 100%;
+	font-size: 50px;
+	text-align: center;	
+}*/
+/*//Navigation//*/
+nav {
+	font-family: 'Merriweather sans', sans-serif;
+	text-align: left;
+}
+ul {
+  background-color: gold;
+  border: medium gold double;
+  padding: 0;
+}
+ul > li > a {
+  padding: 20px;
+  display: inline-block;
+  color: Black;
+  text-decoration: none;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > ul {
+  background-color: goldenrod;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+nav > ul > li:hover {
+  background-color: goldenrod;
+}
+nav > ul > li > ul > li:hover {
+  background-color: darkgoldenrod;
+}
+nav > ul > li > ul {
+  display: none
+}
+nav > ul > li:hover > ul {
+  display: block;
+}
+/*//Body//*/
+body {
+	background-image: url(../img/Oceanbackrgound.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+/*//Content//*/
+content > .box {
+	border: medium double gold;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: antiquewhite;
+}
+content > .box > h2 {
+	text-align: center;
+	fontsize: 30px;
+}
+content > .box > p {
+	margin-left: 3%;
+}
+content > .box > li{
+	list-style: circle;
+	margin-left: 5%;
+	font-size: 20px;
+}
+content > .box > li > a{
+	color: darkgoldenrod;
+	text-decoration: none;
+}
+content > .box > a {
+	text-decoration: none;
+	color: goldenrod;
+	font-size: 20px;
+}
+content > .box > h3 {
+	margin-left: 2%;
+	font-size: 22px;
+}
+content > .box > h3 > a {
+	color: goldenrod;
+	text-decoration: none;
+}
+content > p > a {
+	text-decoration: none;
+}
+content > p > a:hover {
+	text-decoration: underline;
+}
+content > h2 > a {
+	text-decoration: none;
+}
+content > h2 > a:hover {
+	text-decoration: underline;
+}
+button.accordion {
+    background-color: goldenrod;
+    color: White;
+    cursor: pointer;
+    padding: 1.8%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+button.accordion > a {
+	color: White;
+	text-decoration: none;
+}
+button.accordion.active {
+    background-color: goldenrod;
+}
+button.accordion:hover {
+	background-color: darkgoldenrod;
+}
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: darkgoldenrod;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel > ul {
+	background-color: darkgoldenrod;
+	border: none;
+}
+.panel > ul > li {
+	list-style: none;
+	margin-left: 1%;
+	background-color: darkgoldenrod;
+}
+.panel > ul > li > ul {
+	background-color: darkgoldenrod;
+	border: none;
+}
+.panel > ul > li > ul > li {
+	list-style: square;
+	margin-left: 3%;
+	background-color: darkgoldenrod;
+}

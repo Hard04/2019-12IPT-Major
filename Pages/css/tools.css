@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*header*/
+header {
+	text-align: center;
+}
+/*Navigation*/
+nav {
+	font-family: 'Merriweather sans', sans-serif;
+}
+ul {
+  background-color: green;
+  padding: 0;
+}
+ul > li > a {
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > ul {
+  background-color: darkseagreen;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+nav > ul > li:hover {
+  background-color: darkseagreen;
+}
+nav > ul > li > ul > li:hover {
+  background-color: limegreen;
+}
+nav > ul > li > ul {
+  display: none
+}
+nav > ul > li:hover > ul {
+  display: block;
+}
+/*Body*/
+
+/*Content*/
+
+/*Footer*/

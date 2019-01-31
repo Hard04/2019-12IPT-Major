@@ -1,0 +1,119 @@
+@charset "utf-8";
+* {box-sizing: border-box; }
+/*//header//*/
+header {
+	text-align: center;
+}
+/*//Navigation//*/
+nav {
+	font-family: 'Merriweather sans', sans-serif;
+	text-align: left;
+}
+ul {
+  background-color: gold;
+  border: medium gold double;
+  padding: 0;
+}
+ul > li > a {
+  padding: 20px;
+  display: inline-block;
+  color: Black;
+  text-decoration: none;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > ul {
+  background-color: goldenrod;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+nav > ul > li:hover {
+  background-color: goldenrod;
+}
+nav > ul > li > ul > li:hover {
+  background-color: darkgoldenrod;
+}
+nav > ul > li > ul {
+  display: none
+}
+nav > ul > li:hover > ul {
+  display: block;
+}
+/*//Body//*/
+body {
+	background-image: url(../img/Oceanbackrgound.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+/*//Content//*/
+content > .box {
+	border: medium double gold;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: antiquewhite;
+}
+content > .box > h2 {
+	text-align: center;
+}
+content > .box > p {
+	margin-left: 2%;
+}
+/*Div toolbox*/
+body > content > .toolbox {
+	text-align: right;
+	margin-right: 0%;
+	margin-left: 85%;
+	margin-top: 1%;
+	border: medium double gold;
+	padding-right: 1%;
+	background-color: antiquewhite;
+}
+body > content > .toolbox > h4 > a {
+	color: darkgoldenrod;
+	text-decoration: none;
+}
+/*Div itembox*/
+body > content > .itembox {
+	text-align: left;
+	margin-top: -13.5%;
+	margin-right: 85%;
+	border: medium double gold;
+	padding-left: 1%;
+	background-color: antiquewhite;
+}
+body > content > .itembox > h4 > a {
+	color: darkgoldenrod;
+	text-decoration: none;
+}
+/*Div guides*/
+body > content > .guidebox {
+	text-align: left;
+	margin-left: 20%;
+	margin-top: -22.75%;
+	margin-right: 65%;
+	border: medium double gold;
+	padding-left: 1%;
+	background-color: antiquewhite;
+}
+body > content > .guidebox > h3 > a {
+	color: darkgoldenrod;
+	text-decoration: none;
+}
+body > content > .guidebox > h4 > a {
+	text-decoration: none;
+	color: darkgoldenrod;
+}
+/*//Footer//*/
+body > content > .footerbox {
+	margin-bottom: 1%;
+	margin-top: 1%;
+	text-align: center;
+	background-color: antiquewhite;
+	border: medium gold double;
+}
+body > content > .footerbox > footer > a {
+	color: firebrick;
+}
